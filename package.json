@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/prp0076/mycontact-backend/issues"
   },
-  "homepage": "https://github.com/prp0076/mycontact-backend#readme"
+  "homepage": "https://github.com/prp0076/mycontact-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
