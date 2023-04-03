@@ -1,0 +1,19 @@
+{
+  "name": "mycontact-backend",
+  "version": "1.0.0",
+  "description": "this is practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prp0076/mycontact-backend.git"
+  },
+  "author": "pushpraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prp0076/mycontact-backend/issues"
+  },
+  "homepage": "https://github.com/prp0076/mycontact-backend#readme"
+}
