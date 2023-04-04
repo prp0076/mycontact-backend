@@ -6,6 +6,7 @@ const dotenv= require("dotenv").config();
 //thunder client extension
 const app = express();
 //app.use is middleware
+app.use(express.json());
 app.use("/api/contacts",require("./routes/contactRoutes"));
 //get method
 // app.get("/api/contacts",(req,res)=>{
