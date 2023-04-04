@@ -3,10 +3,10 @@
 //@access public
 
 
-const getContact=(req,res)=>{
+const getContact= async (req,res)=>{
     res.status(200).json({message:"get all contacts"});
 }
-const postContact=(req,res)=>{
+const postContact=async (req,res)=>{
     console.log(req.body);
     const {name,age,contact}=req.body;
     if(!name || !age || !contact){
@@ -15,10 +15,10 @@ const postContact=(req,res)=>{
     }
     res.status(200).json({message:"post all contacts"});
 }
-const putContact=(req,res)=>{
+const putContact=async (req,res)=>{
     res.status(200).json({message:`update contact ${req.params.id}`});
 }
-const deleteContact=(req,res)=>{ 
+const deleteContact=async (req,res)=>{ 
     res.status(200).json({message:`delete all contacts ${req.params.id}`});
 }
 
