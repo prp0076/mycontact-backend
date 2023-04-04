@@ -1,5 +1,6 @@
 // creation of express server
 const express = require("express");
+const errorHandler = require("./middleware/errorHandler");
 //dotenv install
 const dotenv= require("dotenv").config();
  
@@ -8,6 +9,8 @@ const app = express();
 //app.use is middleware
 app.use(express.json());
 app.use("/api/contacts",require("./routes/contactRoutes"));
+app.use(errorHandler);
+
 //get method
 // app.get("/api/contacts",(req,res)=>{
 //     res.send("Get for contact");
