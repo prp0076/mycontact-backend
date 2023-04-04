@@ -5,7 +5,11 @@ const errorHandler =(err,req,res,next)=>{
     case contant.VALIDATION_ERROR:
     res.json({tittle:"validation failed",message:err.message,stackTrace:err.stack});
     case contant.NOTFOUND:
-     res.json({tittle:"Not Found",message:err.message,stackTrace:err.stack})
+     res.json({tittle:"Not Found",message:err.message,stackTrace:err.stack});
+    case contant.FORBIDDEN:
+     res.json({tittle:"FORBIDDEN",message:err.message,stackTrace:err.stack});
+    case contant.UNAUTHORIZED:
+     res.json({tittle:"UNAUTHORIZED",message:err.message,stackTrace:err.stack});
     }
 };
 module.exports=errorHandler
