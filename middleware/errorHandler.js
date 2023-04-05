@@ -4,11 +4,11 @@ const errorHandler =(err,req,res,next)=>{
     switch(statusCode){
     case contant.VALIDATION_ERROR:
     res.json({tittle:"validation failed",message:err.message,stackTrace:err.stack});
-    case contant.NOTFOUND:
+    case contant.UNAUTHORIZED:
      res.json({tittle:"Not Found",message:err.message,stackTrace:err.stack});
     case contant.FORBIDDEN:
      res.json({tittle:"FORBIDDEN",message:err.message,stackTrace:err.stack});
-    case contant.UNAUTHORIZED:
+    case contant.NOTFOUND:
      res.json({tittle:"UNAUTHORIZED",message:err.message,stackTrace:err.stack});
     }
 };
