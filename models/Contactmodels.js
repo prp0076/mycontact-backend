@@ -4,15 +4,15 @@ const contactmodels = mongoose.Schema({
         type: String,
         required:[true,"please add contact name"]
     },
-    email:{
+    age:{
         type:String,
         required:[true,"please add email"]
     },
-    phone:{
+    contact:{
         type:String,
         required:[true,"please add contact number"]
     }
 },{
     timestamps:true
 })
-module.exports = mongoose.model("contact",contactmodels);
+module.exports = mongoose.model("Contact",contactmodels);
