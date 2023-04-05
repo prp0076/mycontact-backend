@@ -1,9 +1,11 @@
 // creation of express server
 const express = require("express");
 const errorHandler = require("./middleware/errorHandler");
+const Connectdb = require("./config/dbConnection");
 //dotenv install
 const dotenv= require("dotenv").config();
- 
+ //db connection
+ Connectdb();
 //thunder client extension
 const app = express();
 //app.use is middleware
