@@ -5,6 +5,7 @@ const Connectdb =()=>{
     }
     catch(err){
      console.log(err);
-     process.exit;
+     process.exit(1);
     }
 }
+module.exports = Connectdb
