@@ -20,7 +20,7 @@ app.use(errorHandler);
 // app.get("/api/contacts",(req,res)=>{
 //   res.status(200).json({message:"get all contacts"});
 // }) 
-const port = process.env.PORT;
+const port = 3001;
 app.listen(port,()=>{
     console.log(`server running on ${port}` )
 })
