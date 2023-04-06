@@ -5,7 +5,7 @@ const Connectdb = require("./config/dbConnection");
 //dotenv install
 const dotenv= require("dotenv").config();
  //db connection
-//  Connectdb();
+ Connectdb();
 //thunder client extension
 const app = express();
 //app.use is middleware
